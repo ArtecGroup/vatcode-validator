@@ -4,11 +4,6 @@ var validator = require("./index");
 
 var validCodes =
 [
-  "GB123456789",
-  "GB123456789123",
-  "GBGD001",
-  "GBHA599",
-  "GB123456789 123",
   "ATUABCD1234",
   "BG123456789",
   "BG1234567890",
@@ -39,7 +34,12 @@ var invalidCodes =
   "RO12345678901",
   "CH112947556",
   "CHE 112.947556 MWST",
-  "CHE 112947556-MWST"
+  "CHE 112947556-MWST",
+  "GB123456789",
+  "GB123456789123",
+  "GBGD001",
+  "GBHA599",
+  "GB123456789 123"
 ];
 console.log("Testing valid codes");
 var foundError = false;
