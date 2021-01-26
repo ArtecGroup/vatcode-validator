@@ -29,6 +29,7 @@ var SE = "^SE[0-9]{10,10}01$";
 var SI = "^SI[0-9]{8,8}$";
 var SK = "^SK[0-9]{10,10}$";
 var CH = "^(CHE-|CHE|CHE\s)([0-9]{3,3}(\.)[0-9]{3,3}(\.)[0-9]{3,3}|[0-9]{9,9})(\s|)(MWST|TVA|IVA|)$";
+var XI = "^XI[0-9]{9,9}$";
 
 var patterns = {
     AT: {
@@ -142,6 +143,10 @@ var patterns = {
     CH: {
         prefix: "CH",
         pattern: CH
+    },
+    XI: {
+        prefix: "XI",
+        pattern: XI
     }
 };
 
