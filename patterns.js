@@ -13,10 +13,6 @@ var ES = "^ES[A-Z0-9]{1,1}[0-9]{7,7}[A-Z0-9]{1,1}$";
 var FI = "^FI[0-9]{8,8}$";
 var FR = "^FR[A-Z0-9]{2,2}[0-9]{9,9}$";
 var FR = "^FR[0-9A-HJ-NP-Z]{2,2}[0-9]{9,9}$";
-var GB =    "^GB[0-9]{9,9}$" +
-            "|^GB[0-9]{12,12}$" +
-            "|^GBGD[0-4][0-9]{2,2}$" +
-            "|^GBHA[5-9][0-9]{2,2}$";
 var HR = "^HR[0-9]{11,11}$";
 var HU = "^HU[0-9]{8,8}$";
 var IE = "^IE[0-9]{1,1}[A-Z0-9]{1,1}[0-9]{5,5}[A-Z]{1,1}$|^IE[0-9]{7,7}[A-W]{1,1}[A-I]{1,1}$";
@@ -33,12 +29,9 @@ var SE = "^SE[0-9]{10,10}01$";
 var SI = "^SI[0-9]{8,8}$";
 var SK = "^SK[0-9]{10,10}$";
 var CH = "^(CHE-|CHE|CHE\s)([0-9]{3,3}(\.)[0-9]{3,3}(\.)[0-9]{3,3}|[0-9]{9,9})(\s|)(MWST|TVA|IVA|)$";
+var XI = "^XI[0-9]{9,9}$";
 
 var patterns = {
-    GB: {
-        prefix: "GB",
-        pattern: GB
-    },
     AT: {
       prefix: "AT",
       pattern: AT
@@ -150,6 +143,10 @@ var patterns = {
     CH: {
         prefix: "CH",
         pattern: CH
+    },
+    XI: {
+        prefix: "XI",
+        pattern: XI
     }
 };
 

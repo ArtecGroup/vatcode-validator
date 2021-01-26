@@ -4,11 +4,6 @@ var validator = require("./index");
 
 var validCodes =
 [
-  "GB123456789",
-  "GB123456789123",
-  "GBGD001",
-  "GBHA599",
-  "GB123456789 123",
   "ATUABCD1234",
   "BG123456789",
   "BG1234567890",
@@ -18,7 +13,8 @@ var validCodes =
   "CHE112947556",
   "CHE-112.947.556 IVA",
   "CHE112.947.556TVA",
-  "CHE 112947556 MWST"
+  "CHE 112947556 MWST",
+  "XI123456789"
 ];
 
 var invalidCodes =
@@ -39,7 +35,13 @@ var invalidCodes =
   "RO12345678901",
   "CH112947556",
   "CHE 112.947556 MWST",
-  "CHE 112947556-MWST"
+  "CHE 112947556-MWST",
+  "GB123456789",
+  "GB123456789123",
+  "GBGD001",
+  "GBHA599",
+  "GB123456789 123",
+  "XI1234567890"
 ];
 console.log("Testing valid codes");
 var foundError = false;
